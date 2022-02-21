@@ -72,11 +72,11 @@ $(LITEOS_TARGET):
 ifeq ($(OS), Linux)
 	$(call update_from_baselib_file)
 endif
-	$(LD) $(LITEOS_LDFLAGS) $(LITEOS_TABLES_LDFLAGS) $(LITEOS_DYNLDFLAGS) -Map=$(OUT)/$@.map -o $(OUT)/$@.elf --start-group $(LITEOS_BASELIB) --end-group
+	$(LD) $(LITEOS_LDFLAGS) $(LITEOS_TABLES_LDFLAGS) $(LITEOS_DYNLDFLAGS) -Map=$(OUT)/$@.map -o $(OUT)/$@.elf --start-group $(LITEOS_BASELIB) --end-group --print-memory-usage
 	$(OBJCOPY) -O binary $(OUT)/$@.elf $(OUT)/$@.bin
 	$(OBJDUMP) -t $(OUT)/$@.elf |sort >$(OUT)/$@.sym.sorted
 	$(OBJDUMP) -d $(OUT)/$@.elf >$(OUT)/$@.asm
-	$(SIZE) $(OUT)/$@.elf
+#$(SIZE) $(OUT)/$@.elf
 	$(HIDE)echo "########################################################################################################"
 	$(HIDE)echo "########                      LiteOS build successfully!                                        ########"
 	$(HIDE)echo "########################################################################################################"
