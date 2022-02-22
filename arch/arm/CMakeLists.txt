@@ -1,0 +1,5 @@
+if(LOSCFG_ARCH_ARM_CORTEX_M)
+    add_subdirectory(cortex_m)
+else()
+    add_subdirectory(cortex_a_r)
+endif()

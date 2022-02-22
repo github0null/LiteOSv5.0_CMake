@@ -1,0 +1,162 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						4,
+						6
+					],
+					"jsonFile" : "directory-.-Debug-d0094a50bb2071803777.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"projectIndex" : 0,
+					"source" : "."
+				},
+				{
+					"build" : "arch",
+					"childIndexes" : 
+					[
+						2
+					],
+					"jsonFile" : "directory-arch-Debug-97f42118b2d8cbc376c0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "arch"
+				},
+				{
+					"build" : "arch/arm",
+					"childIndexes" : 
+					[
+						3
+					],
+					"jsonFile" : "directory-arch.arm-Debug-730c55b8801fdebc7a49.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 1,
+					"projectIndex" : 0,
+					"source" : "arch/arm"
+				},
+				{
+					"build" : "arch/arm/cortex_m",
+					"jsonFile" : "directory-arch.arm.cortex_m-Debug-42d2992895d7d4b58cfc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 2,
+					"projectIndex" : 0,
+					"source" : "arch/arm/cortex_m",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "compat",
+					"childIndexes" : 
+					[
+						5
+					],
+					"jsonFile" : "directory-compat-Debug-55fc01149e572817d97b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "compat"
+				},
+				{
+					"build" : "compat/cmsis",
+					"jsonFile" : "directory-compat.cmsis-Debug-c6f57135f191b8a809e6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 4,
+					"projectIndex" : 0,
+					"source" : "compat/cmsis",
+					"targetIndexes" : 
+					[
+						0
+					]
+				},
+				{
+					"build" : "components",
+					"jsonFile" : "directory-components-Debug-167515c4e4d9cb6cacf4.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.20.0"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "components"
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6
+					],
+					"name" : "ys_liteos",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 5,
+					"id" : "cmsis::@cd18740d9e495237961b",
+					"jsonFile" : "target-cmsis-Debug-2a5d4794462f060f440b.json",
+					"name" : "cmsis",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 3,
+					"id" : "cortex-m4::@53e541454a229ebc54a4",
+					"jsonFile" : "target-cortex-m4-Debug-63fc25d4142b04a3a454.json",
+					"name" : "cortex-m4",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build",
+		"source" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

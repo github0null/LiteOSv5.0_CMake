@@ -1,0 +1,16 @@
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/arm/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/arm/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/arm/cortex_m/CMakeFiles/cortex-m4.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/arm/cortex_m/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/arch/arm/cortex_m/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/compat/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/compat/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/compat/cmsis/CMakeFiles/cmsis.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/compat/cmsis/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/compat/cmsis/CMakeFiles/rebuild_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/components/CMakeFiles/edit_cache.dir
+C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/components/CMakeFiles/rebuild_cache.dir
