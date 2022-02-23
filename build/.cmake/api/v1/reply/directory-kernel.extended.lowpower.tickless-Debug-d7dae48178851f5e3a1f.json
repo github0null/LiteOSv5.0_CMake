@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "kernel/extended/lowpower/tickless",
+		"source" : "kernel/extended/lowpower/tickless"
+	}
+}

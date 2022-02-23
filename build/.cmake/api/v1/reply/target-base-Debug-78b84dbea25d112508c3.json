@@ -1,0 +1,496 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_bitmap.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_err.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_hwi.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_lockdep.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_misc.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_mp.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_percpu.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_sortlink.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_stackinfo.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_task.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_tick.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_exc.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_printf.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_queue.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_event.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_mux.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_sem.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./los_swtmr.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./sched/sched_sq/los_priqueue.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./sched/sched_sq/los_sched.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./mem/bestfit_little/los_heap.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./mem/bestfit_little/los_memory.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./mem/common/memstat/los_memstat.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./mem/membox/los_membox.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./shellcmd/hwi_shellcmd.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./shellcmd/mempt_shellcmd.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./shellcmd/stack_shellcmd.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./shellcmd/swtmr_shellcmd.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./shellcmd/sysinfo_shellcmd.c.obj"
+		},
+		{
+			"path" : "kernel/base/CMakeFiles/base.dir/./shellcmd/task_shellcmd.c.obj"
+		}
+	],
+	"backtrace" : 1,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_library",
+			"add_compile_options",
+			"include",
+			"add_compile_definitions",
+			"include_directories",
+			"target_include_directories"
+		],
+		"files" : 
+		[
+			"kernel/base/CMakeLists.txt",
+			"config.cmake",
+			"CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 92,
+				"parent" : 0
+			},
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 32,
+				"parent" : 2
+			},
+			{
+				"file" : 1,
+				"parent" : 3
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 172,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 1,
+				"line" : 171,
+				"parent" : 4
+			},
+			{
+				"command" : 4,
+				"file" : 1,
+				"line" : 170,
+				"parent" : 4
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 95,
+				"parent" : 0
+			}
+		]
+	},
+	"compileGroups" : 
+	[
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections -Og -g -ggdb3"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-include"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/targets/STM32F407_ATK_Explorer/include/menuconfig.h"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "-Wall"
+				},
+				{
+					"backtrace" : 5,
+					"fragment" : "\"-Werror \""
+				}
+			],
+			"defines" : 
+			[
+				{
+					"backtrace" : 6,
+					"define" : "LOSCFG_KERNEL_CPP_EXCEPTIONS_SUPPORT"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "SECUREC_IN_KERNEL=0"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "_ALL_SOURCE"
+				},
+				{
+					"backtrace" : 6,
+					"define" : "__LITEOS__"
+				}
+			],
+			"includes" : 
+			[
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/base/include"
+				},
+				{
+					"backtrace" : 7,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/extended/include"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/extended/include/lowpower"
+				},
+				{
+					"backtrace" : 8,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/base/mem"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		}
+	],
+	"id" : "base::@2f66538d460ab5d2f176",
+	"name" : "base",
+	"paths" : 
+	{
+		"build" : "kernel/base",
+		"source" : "kernel/base"
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Source Files",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4,
+				5,
+				6,
+				7,
+				8,
+				9,
+				10,
+				11,
+				12,
+				13,
+				14,
+				15,
+				16,
+				17,
+				18,
+				19,
+				20,
+				21,
+				22,
+				23,
+				24,
+				25,
+				26,
+				27,
+				28,
+				29
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_bitmap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_err.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_hwi.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_lockdep.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_misc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_mp.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_percpu.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_sortlink.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_stackinfo.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_task.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_tick.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_exc.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_printf.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_queue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_event.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_mux.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_sem.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/los_swtmr.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/sched/sched_sq/los_priqueue.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/sched/sched_sq/los_sched.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/mem/bestfit_little/los_heap.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/mem/bestfit_little/los_memory.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/mem/common/memstat/los_memstat.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/mem/membox/los_membox.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/shellcmd/hwi_shellcmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/shellcmd/mempt_shellcmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/shellcmd/stack_shellcmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/shellcmd/swtmr_shellcmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/shellcmd/sysinfo_shellcmd.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
+			"path" : "kernel/base/shellcmd/task_shellcmd.c",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "OBJECT_LIBRARY"
+}

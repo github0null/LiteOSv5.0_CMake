@@ -37,7 +37,7 @@ ifeq ($(OS), Linux)
     ifeq ($(shell which $(CC)),)
         $(error compiler $(COMPILE_NAME) is not in the ENV)
     endif
-    LITEOS_COMPILER_PATH := $(shell $(LITEOSTOPDIR)/build/scripts/get_compiler_path.sh $(CC))
+    LITEOS_COMPILER_PATH := $(shell $(LITEOSTOPDIR)/tools/scripts/get_compiler_path.sh $(CC))
 else
     ifeq ($(shell where $(CC)),)
         $(error compiler $(COMPILE_NAME) is not in the ENV)

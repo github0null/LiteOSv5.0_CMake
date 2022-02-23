@@ -50,6 +50,165 @@ rule C_COMPILER__cmsis_Debug
 
 
 #############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__base_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__lowpower_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__powermgr_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__tickless_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__cppsupport_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__init_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__posix_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling ASM files.
+
+rule ASM_COMPILER__c_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building ASM object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__c_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__sec_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__z_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__osdepends_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__shell_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for compiling ASM files.
+
+rule ASM_COMPILER__STM32F407_ATK_Explorer_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building ASM object $out
+
+
+#############################################
+# Rule for compiling C files.
+
+rule C_COMPILER__STM32F407_ATK_Explorer_Debug
+  depfile = $DEP_FILE
+  deps = gcc
+  command = C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building C object $out
+
+
+#############################################
+# Rule for linking C executable.
+
+rule C_EXECUTABLE_LINKER__STM32F407_ATK_Explorer_Debug
+  command = cmd.exe /C "$PRE_LINK && C:\Users\Admin\.eide\tools\gcc_arm\bin\arm-none-eabi-gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking C executable $TARGET_FILE
+  restat = $RESTAT
+
+
+#############################################
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE

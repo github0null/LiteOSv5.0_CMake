@@ -15,7 +15,7 @@ if("${LITEOS_ARM_ARCH}_" STREQUAL "-march=armv7-a_")
     list(APPEND ASM_SRCS ${_srcs_})
 endif()
 
-if(LOSCFG_APC_ENABLE)
+if(NOT LOSCFG_APC_ENABLE)
     list(FILTER C_SRCS EXCLUDE REGEX "src/mmu\\.c")
 endif()
 

@@ -1,5 +1,5 @@
 ############### this is a makefile that you can config it ###############
--include $(LITEOSTOPDIR)/build/mk/los_config.mk
+-include $(LITEOSTOPDIR)/tools/mk/los_config.mk
 
 TOP_LD_PATH      = $(LITEOSTOPDIR)
 SCRIPTS_PATH     = $(LITEOS_SCRIPTPATH)

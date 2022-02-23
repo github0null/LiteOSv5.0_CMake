@@ -52,6 +52,31 @@ if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   include("C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/components/cmake_install.cmake")
 endif()
 
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/kernel/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/lib/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/osdepends/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/shell/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/build/targets/cmake_install.cmake")
+endif()
+
 if(CMAKE_INSTALL_COMPONENT)
   set(CMAKE_INSTALL_MANIFEST "install_manifest_${CMAKE_INSTALL_COMPONENT}.txt")
 else()

@@ -23,7 +23,7 @@ Huawei LiteOS提供的Shell作为在线调试工具，可以通过串口工具�
     >![](public_sys-resources/icon-note.gif) **说明：** 
     >静态注册命令方式一般用于注册系统常用命令，动态注册命令方式一般用于注册用户命令。
     >静态注册命令有5个入参，动态注册命令有4个入参。下面除去第一个入参是静态注册独有的，剩余的四个入参两个注册命令是一致的。
-    >-   第一个入参：命令变量名，用于设置链接选项（build/mk/liteos\_tables\_ldflags.mk的LITEOS\_TABLES\_LDFLAGS变量）。例如变量名为ls\_shellcmd，链接选项就应该设置为：LITEOS\_TABLES\_LDFLAGS += -uls\_shellcmd。这个入参是静态注册独有的，动态注册中没有这个入参。
+    >-   第一个入参：命令变量名，用于设置链接选项（tools/mk/liteos\_tables\_ldflags.mk的LITEOS\_TABLES\_LDFLAGS变量）。例如变量名为ls\_shellcmd，链接选项就应该设置为：LITEOS\_TABLES\_LDFLAGS += -uls\_shellcmd。这个入参是静态注册独有的，动态注册中没有这个入参。
     >-   第二个入参：命令类型，目前支持两种命令类型。
     >      -   CMD\_TYPE\_EX：不支持标准命令参数输入，会把用户填写的命令关键字屏蔽掉。例如：输入ls /ramfs，传入给命令处理函数的参数只有/ramfs，对应于命令处理函数中的argv\[0\]，而ls命令关键字并不会被传入。
     >      -   CMD\_TYPE\_STD：支持的标准命令参数输入，所有输入的字符都会通过命令解析后被传入。例如：输入ls /ramfs，ls和/ramfs都会被传入命令处理函数，分别对应于命令处理函数中的argv\[0\]和argv\[1\]。

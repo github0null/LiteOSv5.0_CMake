@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "targets/STM32F407_ATK_Explorer",
+		"source" : "targets/STM32F407_ATK_Explorer"
+	}
+}

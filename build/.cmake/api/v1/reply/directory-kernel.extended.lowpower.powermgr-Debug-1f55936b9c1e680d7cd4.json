@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "kernel/extended/lowpower/powermgr",
+		"source" : "kernel/extended/lowpower/powermgr"
+	}
+}

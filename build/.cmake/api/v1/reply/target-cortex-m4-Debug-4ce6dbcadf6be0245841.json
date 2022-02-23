@@ -11,7 +11,7 @@
 			"path" : "arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/./src/fault.c.obj"
 		},
 		{
-			"path" : "arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/./src/fpb.c.obj"
+			"path" : "arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/./src/mpu.c.obj"
 		},
 		{
 			"path" : "arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/./src/task.c.obj"
@@ -30,6 +30,7 @@
 		[
 			"add_library",
 			"add_compile_options",
+			"include",
 			"target_compile_definitions",
 			"add_compile_definitions",
 			"include_directories",
@@ -38,6 +39,7 @@
 		"files" : 
 		[
 			"arch/arm/cortex_m/CMakeLists.txt",
+			"config.cmake",
 			"CMakeLists.txt"
 		],
 		"nodes" : 
@@ -52,40 +54,56 @@
 				"parent" : 0
 			},
 			{
-				"file" : 1
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 32,
+				"parent" : 2
+			},
+			{
+				"file" : 1,
+				"parent" : 3
 			},
 			{
 				"command" : 1,
 				"file" : 1,
-				"line" : 75,
-				"parent" : 2
+				"line" : 172,
+				"parent" : 4
 			},
 			{
-				"command" : 2,
+				"command" : 3,
 				"file" : 0,
 				"line" : 41,
 				"parent" : 0
 			},
 			{
-				"command" : 3,
+				"command" : 4,
 				"file" : 1,
-				"line" : 74,
-				"parent" : 2
+				"line" : 171,
+				"parent" : 4
 			},
 			{
 				"command" : 4,
 				"file" : 1,
-				"line" : 73,
-				"parent" : 2
+				"line" : 177,
+				"parent" : 4
 			},
 			{
 				"command" : 5,
+				"file" : 1,
+				"line" : 170,
+				"parent" : 4
+			},
+			{
+				"command" : 6,
 				"file" : 0,
 				"line" : 21,
 				"parent" : 0
 			},
 			{
-				"command" : 5,
+				"command" : 6,
 				"file" : 0,
 				"line" : 35,
 				"parent" : 0
@@ -101,57 +119,61 @@
 					"fragment" : "-mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -fdata-sections -ffunction-sections -Og -g -ggdb3"
 				},
 				{
-					"backtrace" : 3,
-					"fragment" : "\"-include \\\"C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/targets/STM32F407_ATK_Explorer/include/menuconfig.h\\\"\""
+					"backtrace" : 5,
+					"fragment" : "-include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 5,
+					"fragment" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/targets/STM32F407_ATK_Explorer/include/menuconfig.h"
+				},
+				{
+					"backtrace" : 5,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 3,
-					"fragment" : "-Werror"
+					"backtrace" : 5,
+					"fragment" : "\"-Werror \""
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 6,
 					"define" : "LOSCFG_ARCH_FPU_VFP_D16"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
+					"define" : "LOSCFG_KERNEL_CPP_EXCEPTIONS_SUPPORT"
+				},
+				{
+					"backtrace" : 7,
 					"define" : "SECUREC_IN_KERNEL=0"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"define" : "_ALL_SOURCE"
 				},
 				{
-					"backtrace" : 5,
-					"define" : "__ASSEMBLY__"
-				},
-				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"define" : "__LITEOS__"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
-					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/include"
-				},
-				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/base/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/include"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/extended/include"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 11,
 					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/arch/arm/cortex_m/include"
 				}
 			],
@@ -172,57 +194,65 @@
 					"fragment" : "-mthumb -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=softfp -x assembler-with-cpp -g -ggdb3"
 				},
 				{
-					"backtrace" : 3,
-					"fragment" : "\"-include \\\"C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/targets/STM32F407_ATK_Explorer/include/menuconfig.h\\\"\""
+					"backtrace" : 5,
+					"fragment" : "-include"
 				},
 				{
-					"backtrace" : 3,
+					"backtrace" : 5,
+					"fragment" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/targets/STM32F407_ATK_Explorer/include/menuconfig.h"
+				},
+				{
+					"backtrace" : 5,
 					"fragment" : "-Wall"
 				},
 				{
-					"backtrace" : 3,
-					"fragment" : "-Werror"
+					"backtrace" : 5,
+					"fragment" : "\"-Werror \""
 				}
 			],
 			"defines" : 
 			[
 				{
-					"backtrace" : 4,
+					"backtrace" : 6,
 					"define" : "LOSCFG_ARCH_FPU_VFP_D16"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
+					"define" : "LOSCFG_KERNEL_CPP_EXCEPTIONS_SUPPORT"
+				},
+				{
+					"backtrace" : 7,
 					"define" : "SECUREC_IN_KERNEL=0"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"define" : "_ALL_SOURCE"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 8,
 					"define" : "__ASSEMBLY__"
 				},
 				{
-					"backtrace" : 5,
+					"backtrace" : 7,
 					"define" : "__LITEOS__"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 6,
-					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/include"
-				},
-				{
-					"backtrace" : 7,
+					"backtrace" : 9,
 					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/base/include"
 				},
 				{
-					"backtrace" : 7,
+					"backtrace" : 9,
+					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/include"
+				},
+				{
+					"backtrace" : 10,
 					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/kernel/extended/include"
 				},
 				{
-					"backtrace" : 8,
+					"backtrace" : 11,
 					"path" : "C:/Users/Admin/Desktop/ys_liteos/LiteOS-v5.0.0/arch/arm/cortex_m/include"
 				}
 			],
@@ -286,7 +316,7 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "arch/arm/cortex_m/src/fpb.c",
+			"path" : "arch/arm/cortex_m/src/mpu.c",
 			"sourceGroupIndex" : 0
 		},
 		{

@@ -55,11 +55,11 @@ OS ?= $(shell uname -s)
 #          $(LITEOS_COMPILER_GCCLIB_PATH)
 #          $(LITEOS_COMPILER_CXXLIB_PATH)
 ifeq ($(LOSCFG_COMPILER_XTENSA_32), y)
-include $(LITEOSTOPDIR)/build/mk/compiler_xtensa.mk
+include $(LITEOSTOPDIR)/tools/mk/compiler_xtensa.mk
 else
 # Supported GCC Compilers
 # Also support "make CROSS_COMPILE=" to use third party compilers.
-include $(LITEOSTOPDIR)/build/mk/compiler_gcc.mk
+include $(LITEOSTOPDIR)/tools/mk/compiler_gcc.mk
 endif
 
 HIDE    := @
@@ -76,12 +76,12 @@ OBJ_MKDIR = if [ ! -d $(dir $@) ]; then mkdir -p $(dir $@); fi
 # Generate file that contains link targets.
 # Also support old style sub module make directly using "LITEOS_BASELIB +="
 # which is not recommented.
-include $(LITEOSTOPDIR)/build/mk/gen_link_targets.mk
+include $(LITEOSTOPDIR)/tools/mk/gen_link_targets.mk
 
 ## variable define ##
 OUT  = $(LITEOSTOPDIR)/out/$(LITEOS_PLATFORM)
 BUILD  = $(OUT)/obj
-MK_PATH  = $(LITEOSTOPDIR)/build/mk
+MK_PATH  = $(LITEOSTOPDIR)/tools/mk
 LITEOS_SCRIPTPATH  ?= $(LITEOSTOPDIR)/tools/scripts
 LITEOS_LIB_BIGODIR  = $(OUT)/lib/obj
 LOSCFG_ENTRY_SRC    = $(LITEOSTOPDIR)/kernel/init/los_init.c
@@ -115,7 +115,7 @@ AS_OBJS_LIBC_FLAGS  = -D__ASSEMBLY__
 WARNING_AS_ERROR   := -Wall -Werror
 
 ifeq ($(LOSCFG_KERNEL_DYNLOAD), y)
--include $(LITEOSTOPDIR)/build/mk/dynload_ld.mk
+-include $(LITEOSTOPDIR)/tools/mk/dynload_ld.mk
 endif
 
 include $(LITEOSTOPDIR)/arch/cpu.mk
