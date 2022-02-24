@@ -22,21 +22,7 @@ target_include_directories(${MODULE_NAME} PRIVATE
     ${CMAKE_SOURCE_DIR}/kernel/base/include
     ${CMAKE_SOURCE_DIR}/kernel/extended/include)
 
-target_compile_options(${MODULE_NAME} PRIVATE
-    ${LITEOS_GCOV_OPTS})
-
-if(LOSCFG_GDB)
-    target_compile_options(${MODULE_NAME} PRIVATE
-        ${AS_OBJS_LIBC_FLAGS})
-endif()
-
 # public 
 
 target_include_directories(${MODULE_NAME} PUBLIC
     ${CMAKE_SOURCE_DIR}/arch/arm/cortex_m/include)
-
-if(LOSCFG_ARCH_FPU_DISABLE)
-    target_compile_definitions(${MODULE_NAME} PUBLIC LOSCFG_ARCH_FPU_DISABLE)
-elseif(LOSCFG_ARCH_FPU_VFP_D16)
-    target_compile_definitions(${MODULE_NAME} PUBLIC LOSCFG_ARCH_FPU_VFP_D16)
-endif()

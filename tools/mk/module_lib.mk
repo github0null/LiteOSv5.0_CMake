@@ -37,14 +37,17 @@ SUB_MODULE_BUILD: $(MODULE_y)
 
 $(LOCAL_COBJS): $(OBJOUT)/%.o: %.c
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) CC '$<'
 	$(HIDE)$(CC) $(LOCAL_FLAGS) $(LITEOS_CFLAGS) $(LOCAL_CFLAGS) -c $< -o $@
 
 $(LOCAL_CPPOBJS): $(OBJOUT)/%.o: %.cpp
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) CXX '$<'
 	$(HIDE)$(GPP) $(LOCAL_FLAGS) $(LITEOS_CXXFLAGS) $(LOCAL_CPPFLAGS) -c $< -o $@
 
 $(LOCAL_ASMOBJS2): $(OBJOUT)/%.o: %.S
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) AS '$<'
 ifeq ($(LITEOS_CPU_TYPE), riscv)
 	$(HIDE)$(CC) $(LOCAL_FLAGS) $(LITEOS_ASFLAGS) $(LOCAL_ASFLAGS) -c $< -o $@
 else
@@ -53,6 +56,7 @@ endif
 
 $(LOCAL_ASMOBJS): $(OBJOUT)/%.o: %.s
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) AS '$<'
 	$(HIDE)$(CC) $(LOCAL_FLAGS) $(LITEOS_ASFLAGS) $(LOCAL_ASFLAGS) -c $< -o $@
 
 $(LOCAL_CGCH): %.h.gch : %.h

@@ -10,6 +10,8 @@ set(MCU_MFPU_TYPE "default") # options: 'sp', 'dp', 'none', 'default'
 #set(FLASHER_PORT_TYPE "swd")
 #set(FLASHER_MCPU_NAME "STM32H750VB")
 
+option(NO_SPEC_FLAGS "No Default SPEC FLAGS" ON)
+
 # Include toolchain and flasher config
 include(${CMAKE_SOURCE_DIR}/cmake/toolchain/${COMPILER_TYPE}/${MCU_ARCH_TYPE}.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/utils/kconfig.cmake)
@@ -30,6 +32,12 @@ kconfig_include(.config
 
 # Global config
 include(config.cmake)
+
+# 
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY          ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_DEBUG    ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY_RELEASE  ${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
+link_directories(${CMAKE_ARCHIVE_OUTPUT_DIRECTORY})
 
 # auto add subdirectory
 file(GLOB sub_files RELATIVE "${CMAKE_CURRENT_LIST_DIR}" "${CMAKE_CURRENT_LIST_DIR}/*")

@@ -14,7 +14,7 @@ else()
     aux_source_directory(src C_SRCS)
 endif()
 
-add_library(${MODULE_NAME} OBJECT ${C_SRCS})
+add_library(${MODULE_NAME} STATIC ${C_SRCS})
 
 target_compile_definitions(${MODULE_NAME} PRIVATE
     SECUREC_HAVE_WCTOMB=0

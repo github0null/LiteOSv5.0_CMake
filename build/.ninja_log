@@ -1,6 +1,0 @@
-# ninja log v5
-60	192	6672999079107363	arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/src/exception.S.obj	74544a3b48abc9f5
-50	160	6672999078778290	arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/src/dispatch.S.obj	b01510775477eb9f
-4	187	6672999079067481	arch/arm/cortex_m/CMakeFiles/cortex-m4.dir/src/canary.c.obj	6d9535e8ad52f89c
-82	254	6672999079785540	kernel/base/CMakeFiles/base.dir/los_bitmap.c.obj	9712ab05e3789a08
-94	254	6672999079785540	kernel/base/CMakeFiles/base.dir/los_err.c.obj	2b0590cabfae5a5

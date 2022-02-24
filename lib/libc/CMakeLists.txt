@@ -37,6 +37,8 @@ file(GLOB_RECURSE ASM_SRCS
     RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" 
     "src/string/${ARCH_LOCAL}/*.s")
 
+list(FILTER ASM_SRCS EXCLUDE REGEX "src/string/${ARCH_LOCAL}/.*\.S")
+
 if(NOT LOSCFG_ARCH_ARM_CORTEX_M)
     file(GLOB_RECURSE ASM_SRCS 
         LIST_DIRECTORIES false 
@@ -63,11 +65,11 @@ elseif("${LITEOS_CPU_TYPE}" STREQUAL "riscv")
         "src/string/memcpy.c")
 endif()
 
-add_library(${MODULE_NAME} OBJECT 
+add_library(${MODULE_NAME} STATIC 
     ${C_SRCS}
     ${ASM_SRCS})
 
-target_include_directories(${MODULE_NAME} PRIVATE
+target_include_directories(${MODULE_NAME} BEFORE PRIVATE
     "${CMAKE_SOURCE_DIR}/lib/libc/src/include"
     "${CMAKE_SOURCE_DIR}/lib/libc/src/internal"
     "${CMAKE_SOURCE_DIR}/lib/libc/src/crypt"
@@ -90,6 +92,8 @@ target_include_directories(${MODULE_NAME} PRIVATE
     "${CMAKE_SOURCE_DIR}/lib/huawei_libc/tzdst")
 
 if(LOSCFG_LLTSER)
-    target_include_directories(${MODULE_NAME} PRIVATE
+    target_include_directories(${MODULE_NAME} BEFORE PRIVATE
         "${CMAKE_SOURCE_DIR}/tools/gcov_ser")
 endif()
+
+add_subdirectory(src/math)

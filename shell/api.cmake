@@ -1,0 +1,4 @@
+
+if(LOSCFG_SHELL AND LOSCFG_SHELL_FULL_CAP)
+    set(LITEOS_SHELL_INCLUDE ${CMAKE_SOURCE_DIR}/shell/full/include)
+endif()

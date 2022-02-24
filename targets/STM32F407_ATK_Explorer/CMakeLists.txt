@@ -23,7 +23,14 @@ add_executable(${MODULE_NAME}
 target_include_directories(${MODULE_NAME} PRIVATE
     "${CMAKE_SOURCE_DIR}/include"
     "${CMAKE_SOURCE_DIR}/targets/bsp/drivers/STM32F4xx_HAL_Driver/Inc"
-    "${CMAKE_SOURCE_DIR}/targets/bsp/drivers/STM32F4xx_HAL_Driver/Inc/Legacy")
+    "${CMAKE_SOURCE_DIR}/targets/bsp/drivers/STM32F4xx_HAL_Driver/Inc/Legacy"
+    "${CMAKE_SOURCE_DIR}/targets/bsp/common"
+    "${CMAKE_SOURCE_DIR}/targets/bsp/include"
+    "${CMAKE_SOURCE_DIR}/targets/bsp/hw/include"
+    "${CMAKE_SOURCE_DIR}/targets/bsp/drivers/st_timer"
+    "${CMAKE_SOURCE_DIR}/targets/${LITEOS_PLATFORM}/include"
+    "${CMAKE_SOURCE_DIR}/kernel/extended/include"
+    "${CMAKE_SOURCE_DIR}/targets/${LITEOS_PLATFORM}/Inc")
 
 target_compile_definitions(${MODULE_NAME} PRIVATE
     USE_HAL_DRIVER

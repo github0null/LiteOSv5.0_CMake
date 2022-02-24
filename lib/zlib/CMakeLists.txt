@@ -5,5 +5,5 @@ set(C_SRCS)
 
 aux_source_directory(src C_SRCS)
 
-add_library(${MODULE_NAME} OBJECT
+add_library(${MODULE_NAME} STATIC
     ${C_SRCS})

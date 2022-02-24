@@ -57,22 +57,27 @@ SUB_MODULE_BUILD: $(MODULE_y)
 
 $(OBJOUT)/%.o: %.c
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) CC '$<'
 	$(HIDE)$(CC) $(LITEOS_CFLAGS) $(LOCAL_FLAGS) $(LOCAL_CFLAGS) -c $< -o $@
 
 $(OBJOUT)/%.o: %.S
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) AS '$<'
 	$(HIDE)$(CC) $(LITEOS_CFLAGS) $(LOCAL_FLAGS) $(LOCAL_ASFLAGS) -c $< -o $@
 
 $(OBJOUT)/%.o: %.s
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) AS '$<'
 	$(HIDE)$(AS) $(LITEOS_ASFLAGS) $(LOCAL_FLAGS) $(LOCAL_ASFLAGS) -c $< -o $@
 
 $(OBJOUT)/%.o: %.cpp
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) CXX '$<'
 	$(HIDE)$(GPP) $(LITEOS_CXXFLAGS) $(LOCAL_FLAGS) $(LOCAL_CPPFLAGS) -c $< -o $@
 
 $(OBJOUT)/%.o: %.cc
 	$(HIDE)$(OBJ_MKDIR)
+	$(HIDE)$(ECHO) CXX '$<'
 	$(HIDE)$(GPP) $(LITEOS_CXXFLAGS) $(LOCAL_FLAGS) $(LOCAL_CPPFLAGS) -c $< -o $@
 
 $(LOCAL_CGCH): %.h.gch : %.h
