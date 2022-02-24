@@ -12,7 +12,7 @@ if(LOSCFG_SHELL_FULL_CAP)
         list(APPEND C_SRCS full/src/base/porting/port_uart.c)
     endif()
 
-    add_library(${MODULE_NAME} OBJECT ${C_SRCS})
+    add_library(${MODULE_NAME} STATIC ${C_SRCS})
 
     target_include_directories(${MODULE_NAME} PRIVATE
         "${CMAKE_SOURCE_DIR}/include"

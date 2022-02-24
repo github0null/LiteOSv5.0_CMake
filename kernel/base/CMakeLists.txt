@@ -89,7 +89,7 @@ if(LOSCFG_SHELL)
     aux_source_directory(shellcmd C_SRCS)
 endif()
 
-add_library(${MODULE_NAME} OBJECT
+add_library(${MODULE_NAME} STATIC
     ${C_SRCS})
 
 target_include_directories(${MODULE_NAME} PRIVATE

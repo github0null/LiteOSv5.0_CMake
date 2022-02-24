@@ -12,7 +12,7 @@ if(NOT LOSCFG_APC_ENABLE)
     list(FILTER C_SRCS EXCLUDE REGEX "src/mpu\\.c")
 endif()
 
-add_library(${MODULE_NAME} OBJECT
+add_library(${MODULE_NAME} STATIC
     ${C_SRCS}
     ${ASM_SRCS})
 

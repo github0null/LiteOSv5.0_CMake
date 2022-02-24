@@ -23,4 +23,4 @@ if(LOSCFG_KERNEL_CPPSUPPORT)
     list(APPEND OBJ_SRCS $<TARGET_OBJECTS:cppsupport>)
 endif()
 
-add_library(${MODULE_NAME} OBJECT ${OBJ_SRCS})
+add_library(${MODULE_NAME} STATIC ${OBJ_SRCS})

@@ -23,7 +23,7 @@ if(LOSCFG_KERNEL_DEEPSLEEP OR LOSCFG_KERNEL_TICKLESS)
     list(APPEND OBJ_SRCS $<TARGET_OBJECTS:tickless>)
 endif()
 
-add_library(${MODULE_NAME} OBJECT
+add_library(${MODULE_NAME} STATIC
     ${C_SRCS}
     ${OBJ_SRCS})
 

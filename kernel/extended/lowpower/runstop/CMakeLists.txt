@@ -10,7 +10,7 @@ file(GLOB_RECURSE ASM_SRCS
     LIST_DIRECTORIES false 
     RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" "src/*.s")
 
-add_library(${MODULE_NAME} OBJECT
+add_library(${MODULE_NAME} STATIC
     ${C_SRCS}
     ${ASM_SRCS})
 
