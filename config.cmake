@@ -76,7 +76,7 @@ endif()
 if(LOSCFG_LIB_LIBC)
     list(APPEND LITEOS_COMMON_OPTS -nostdinc -nostdlib)
     list(APPEND LITEOS_ASMFLAGS ${AS_OBJS_LIBC_FLAGS})
-    list(APPEND LITEOS_LD_OPTS -Wl,-nostdlib)
+    list(APPEND LITEOS_LD_OPTS -nostdlib)
 endif()
 
 set(LITEOS_COPTS_BASE "${LITEOS_COMMON_OPTS}")
@@ -127,7 +127,7 @@ if(LOSCFG_LLTREPORT)
     list(APPEND LITEOS_BASELIB gcov)
 endif()
 
-list(APPEND LITEOS_LD_OPTS -Wl,-nostartfiles -Wl,-static)
+list(APPEND LITEOS_LD_OPTS -nostartfiles -static)
 
 if(LOSCFG_ARCH_CORTEX_M0)
     list(APPEND LITEOS_COPTS_BASE -fshort-enums)
