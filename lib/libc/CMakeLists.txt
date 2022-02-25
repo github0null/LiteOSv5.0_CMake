@@ -18,7 +18,7 @@ if(LOSCFG_LIB_STDIO)
     list(APPEND C_SRCS_DIRS src/stdio ../huawei_libc/stdio)
 endif()
 
-foreach(_dir_name "${C_SRCS_DIRS}")
+foreach(_dir_name ${C_SRCS_DIRS})
     aux_source_directory("${_dir_name}" C_SRCS)
 endforeach()
 
@@ -95,5 +95,7 @@ if(LOSCFG_LLTSER)
     target_include_directories(${MODULE_NAME} BEFORE PRIVATE
         "${CMAKE_SOURCE_DIR}/tools/gcov_ser")
 endif()
+
+target_compile_options(${MODULE_NAME} PRIVATE -Wno-maybe-uninitialized)
 
 add_subdirectory(src/math)

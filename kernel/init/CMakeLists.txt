@@ -17,3 +17,5 @@ endif()
 if(LOSCFG_SHELL_MINI)
     target_include_directories(${MODULE_NAME} PRIVATE "${CMAKE_SOURCE_DIR}/shell/mini/include")
 endif()
+
+target_link_libraries(${MODULE_NAME} PRIVATE base)

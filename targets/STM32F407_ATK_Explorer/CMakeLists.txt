@@ -16,7 +16,7 @@ list(APPEND C_SRCS
 list(APPEND ASM_SRCS 
     los_startup_gcc.S)
 
-add_executable(${MODULE_NAME}
+add_library(${MODULE_NAME} OBJECT
     ${C_SRCS}
     ${ASM_SRCS})
 

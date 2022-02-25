@@ -162,7 +162,7 @@ endif()
 if(LOSCFG_ARCH_ARM_CORTEX_M)
     file(GLOB_RECURSE _SRCS_LIST 
         LIST_DIRECTORIES false RELATIVE "${CMAKE_CURRENT_SOURCE_DIR}" 
-        "hw/arm/timer/arm_cortex_m/*.c"
+        "hw/arm/interrupt/nvic/*.c"
         "common/dwt.c"
         "hw/arm/timer/arm_cortex_m/*.c")
     list(APPEND LOCAL_SRCS ${_SRCS_LIST})

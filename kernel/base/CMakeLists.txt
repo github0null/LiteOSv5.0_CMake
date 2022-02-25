@@ -96,3 +96,5 @@ target_include_directories(${MODULE_NAME} PRIVATE
     "${CMAKE_SOURCE_DIR}/kernel/extended/include"
     "${CMAKE_SOURCE_DIR}/kernel/extended/include/lowpower"
     "${CMAKE_SOURCE_DIR}/kernel/base/mem")
+
+target_link_libraries(${MODULE_NAME} PRIVATE c sec ${LOSCFG_ARCH_CPU})
