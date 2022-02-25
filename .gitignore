@@ -1,3 +1,7 @@
-/.vscode
+/.vscode/*
 /out
 /build
+/targets/*/include/menuconfig.h
+
+!/.vscode/tasks.json
+!/.vscode/settings.json

@@ -10,6 +10,7 @@ set(FLASHER_TYPE_NAME "jlink")
 set(FLASHER_PORT_TYPE "swd")
 set(FLASHER_MCPU_NAME "STM32F407ZG")
 
+# toolchain options
 option(NO_SPEC_FLAGS "No Default SPEC FLAGS" ON)
 
 # Include toolchain and flasher config
@@ -25,8 +26,11 @@ project(${PRJ_NAME}
     VERSION "0.1.0"
     LANGUAGES C ASM CXX)
 
+# limit compiler version 
+check_compiler_version("8.3")
+
 # Include kconfig
-kconfig_include(.config 
+kconfig_include(".config" 
     OUTPUT_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}"
     OUTPUT_HEADER_NAME "menuconfig.h")
 
