@@ -1,5 +1,5 @@
 {
-    "cmake.generator": "Ninja",
+    "cmake.generator": "MinGW Makefiles",
     "cmake.buildDirectory": "${workspaceFolder}/build",
     "files.associations": {
         "*.h": "c",
