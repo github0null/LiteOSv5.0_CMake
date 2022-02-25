@@ -20,6 +20,7 @@ list(APPEND LITEOS_INCLUDE
     "${CMAKE_SOURCE_DIR}/kernel/base/include"
     "${CMAKE_SOURCE_DIR}/kernel/include")
 
+set(LITEOS_MENUCONFIG_H "${CMAKE_SOURCE_DIR}/targets/bsp/common/menuconfig.h")
 set(LITEOS_PLATFORM_MENUCONFIG_H "${CMAKE_SOURCE_DIR}/targets/${LOSCFG_PLATFORM}/include/menuconfig.h")
 configure_file(${CMAKE_CURRENT_BINARY_DIR}/menuconfig.h "${LITEOS_PLATFORM_MENUCONFIG_H}" COPYONLY)
 list(APPEND LITEOS_CFLAGS -include "${LITEOS_PLATFORM_MENUCONFIG_H}")

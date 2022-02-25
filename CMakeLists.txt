@@ -60,3 +60,23 @@ target_link_libraries(${CMAKE_PROJECT_NAME} ${LITEOS_BASELIB})
 # Output .hex .bin file
 output_binary_files(${CMAKE_PROJECT_NAME})
 output_flash_command(${CMAKE_PROJECT_NAME})
+
+# support menuconfig
+add_custom_target(menuconfig
+    COMMAND python "${CMAKE_SOURCE_DIR}/tools/menuconfig/usr_config.py"
+    COMMAND ${CMAKE_COMMAND} -E rm -f ${LITEOS_MENUCONFIG_H}
+    WORKING_DIRECTORY ${CMAKE_SOURCE_DIR}
+    USES_TERMINAL VERBATIM)
+
+# flash command
+if(CMAKE_HOST_WIN32)
+    add_custom_target(flash
+        COMMAND cmd /C .\\flash.bat
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        USES_TERMINAL VERBATIM)
+else()
+    add_custom_target(flash
+        COMMAND bash ./flash.bat
+        WORKING_DIRECTORY ${CMAKE_BINARY_DIR}
+        USES_TERMINAL VERBATIM)
+endif()
