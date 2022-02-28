@@ -19,7 +19,7 @@ include(${CMAKE_SOURCE_DIR}/cmake/utils/kconfig.cmake)
 include(${CMAKE_SOURCE_DIR}/cmake/flasher/${FLASHER_TYPE_NAME}-${FLASHER_PORT_TYPE}.cmake)
 
 # Set up project name
-set(PRJ_NAME "ys_liteos")
+set(PRJ_NAME "liteos_cmake")
 
 # Set up the project
 project(${PRJ_NAME}
